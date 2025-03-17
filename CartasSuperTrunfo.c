@@ -1,30 +1,25 @@
 #include <stdio.h>
 
 int main() {
-   int turisticos, população;
-   float area, pib;
-   char estado;
-   char codigo, nome[20];
+   char  nome[20];
+   int  populacao;
+   float area;
+   char codigo[20];
+   
 
      
 
   printf ("Bem vindo ao cadastro de cartas! \n");
 
-  printf ("Informe seu estado: \n ");
-  scanf  ("&s" , &estado);
+  printf ("Digite o sigla da sua cartas \n");
+  scanf ("%s", &nome);
+  
 
-  printf ("Informe o codigo da carta: \n");
-  scanf ("&s" , &codigo);
-
-  printf ("Informe o nome da cidade: \n");
-  scanf ("&s" , &nome);
-
-  printf ("Informe o numero de habitantes: \n");
-  scanf ("&d" , &população);
-
-
-
-     
+  printf ("Digite o numero de habitantes\n");
+  scanf ("%d", populacao);
+  printf ("Digite o tamanho em metros quadrados do seu estado\n");
+  scanf ("%d", area);
   
     return 0;
+
 }
